@@ -1,0 +1,34 @@
+body {
+    background-color: #292524;
+}
+    
+    h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "coiny", sans-serif;
+    color: #fafaf9;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: "sono", sans-serif;
+    color: #fafaf9;
+    background-color: #44403c;
+}
+
+ul {
+    list-style: none;
+}
+
+.tag {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "coiny", sans-serif;
+    color: #fafaf9;
+}
+
+form {
+    background-color: #44403c;  
+}
