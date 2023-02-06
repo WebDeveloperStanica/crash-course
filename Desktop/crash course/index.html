@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
     <header class="header">
       <div class="logo">
         <img src="logo.png" height="68" width="68" alt="Logo" />
         <h1>Today I Learned</h1>
       </div>
-      <button>Share a fact</button>
+      <button class="btn btn-large">Share a fact</button>
     </header>
     <form class="fact-form">
       <input type="text" placeholder="Share a fact with the world..." />
@@ -28,14 +29,14 @@
         <option value="science">Science</option>
         <option value="finance">Finance</option>
       </select>
-      <button>Post</button>
+      <button class="btn btn-large">Post</button>
     </form>
     <main class="main">
       <aside>
         <ul>
-          <li><button>All</button></li>
-          <li><button>Technology</button></li>
-          <li><button>Science</button></li>
+          <li class="category"><button class="btn btn-all-categories">All</button></li>
+          <li class="category"><button class="btn btn-category" style="background-color: #3b82f6">Technology</button></li>
+          <li class="category"><button class="btn btn-category" style="background-color: #16a34a">Science</button></li>
         </ul>
       </aside>
       <section>
@@ -43,7 +44,7 @@
           <li class="fact">
             <p>
               React is being developed by mata
-              <a href="https://opensource.fb.com/" target="_blank">(Source)</a
+              <a class="source" href="https://opensource.fb.com/" target="_blank">(Source)</a
               >
             </p>
             <span class="tag" style="background-color: #3b82f6"> #technology#</span>
@@ -58,7 +59,7 @@
               Millennial dads spend 3 times as much time with their kids than
               their fathers spent with them. In 1992, 43% of fathers had never
               changed a diaper. Today, that number is down to 3%.
-              <a href="https://opensource.fb.com/" target="_blank">(Source)</a
+              <a class="source" href="https://opensource.fb.com/" target="_blank">(Source)</a
               >
             </p>
             <span class="tag" style="background-color: #eab308"> #society#</span>
@@ -71,6 +72,7 @@
         </ul>
       </section>
     </main>
+    </div>
     <footer>
     </footer>
   </body>

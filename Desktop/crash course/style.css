@@ -7,9 +7,12 @@ body {
     background-color: #292524;
     color: #fafaf9;
     font-family: "Sono", sans-serif;
-    padding: 40px;
+    padding: 48px 64px;
 }
-    
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 .header {
     margin-bottom: 40px;
     display: flex;
@@ -20,6 +23,10 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+.logo img {
+    width: 68px;
+    height: 68px;
 }
 
 .fact-form {
@@ -41,6 +48,9 @@ body {
     color: #fafaf9;
     line-height: 1;
     margin-top: 6px;
+}
+.category {
+    margin-bottom: 16px;
 }
 
 .fact {
@@ -70,12 +80,56 @@ ul {
     padding-top: 3px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 50px;
+    cursor: pointer;
 }
 .vote-buttons {
     margin-left: auto;
     
 }
 
+.source:link, 
+.source:visited {
+    color: #a8a29e;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: 0.4s;
+}
+.source:hover,
+.source:active {
+    color: #3b82f6;
+}
 form {
     background-color: #44403c;  
+}
+
+.btn {
+    border: none;
+    font-family: "Coiny", sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 16px 0 13px;
+    background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab30b);
+    color: inherit;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(110%) rotate(-2deg); 
+}
+
+.btn-large {
+    font-size: 20px;
+    padding: 20px 32px 17px;
+}
+.btn-all-categories {
+    margin-bottom: 16px;
+    width: 100%;
+}
+.btn-category {
+    width: 100%;
+    background-image: none;
 }
